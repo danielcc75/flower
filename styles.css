@@ -51,9 +51,10 @@ body {
 }
 
 .message {
-  background: #fce700;
+  background: transparent;     /* Fondo transparente */
+  color: #fce700;              /* Texto amarillo */
   bottom: 50px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Great Vibes", cursive; /* Cambiado a una fuente cursiva */
   font-size: 40px;
   font-style: normal;
   font-weight: 800;
@@ -61,16 +62,36 @@ body {
   line-height: 1;
   padding: 10px;
   position: absolute;
-  opacity: 0; /* El elemento empieza invisible */
+  opacity: 0;                  /* El elemento empieza invisible */
   animation: fadeIn 1s forwards;
-  animation-delay: 2s; /* El elemento aparecerá después de 60 segundos */
+  animation-delay: 2s;         /* Cambia a 60s si quieres 1 minuto */
 }
 
-@keyframes fadeIn {
-  to {
-    opacity: 1; /* El elemento se vuelve visible */
-  }
+.messe {
+  background: transparent;     
+  color: #fce700;              
+  top: 20px;                   /* Posición desde arriba */
+  right: 20px;                 /* Posición desde la derecha */
+  font-family: "Great Vibes", cursive; 
+  font-size: 40px;             
+  font-style: normal;          
+  font-weight: 800;            
+  height: 60px;                
+  line-height: 1;              
+  padding: 10px;               
+  position: absolute;          /* Posición absoluta dentro del contenedor */
+  opacity: 0;                  
+  animation: fadeIn 1s forwards;
+  animation-delay: 2s;         
 }
+
+
+/* La animación debe ir fuera de la clase */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
 
 .flower--1 {
   -webkit-animation: moving-flower-1 4s linear infinite;
