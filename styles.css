@@ -85,6 +85,25 @@ body {
   animation-delay: 2s;         
 }
 
+.mensaje {
+  background: transparent;     
+  color: #fce700;              
+  position: absolute;          /* Posición absoluta */
+  top: 50%;                    /* Lo lleva al 50% desde arriba */
+  left: 20px;                  /* Lo deja pegado a la izquierda */
+  transform: translateY(-50%); /* Lo centra exactamente en vertical */
+  
+  font-family: "Great Vibes", cursive; 
+  font-size: 40px;             
+  font-style: normal;          
+  font-weight: 800;            
+  height: 60px;                
+  line-height: 1;              
+  padding: 10px;               
+  opacity: 0;                  
+  animation: fadeIn 1s forwards;
+  animation-delay: 2s;         
+}
 
 /* La animación debe ir fuera de la clase */
 @keyframes fadeIn {
